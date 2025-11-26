@@ -15,7 +15,7 @@ function App() {
     setTest(data);
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTest(e.target.value);
     sendMessage(e.target.value);
   };
